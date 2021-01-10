@@ -12,14 +12,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",
-    fileName: "myBundle.js",
+    filename: "myBundle.js",
   },
   devServer: {
     stats: "minimal",
     overlay: true,
     historyApiFallback: true,
     disableHostCheck: true,
-    header: { "Access-Control-Allow-Origin": "*" },
+    headers: { "Access-Control-Allow-Origin": "*" },
     https: false,
   },
   plugins: [
