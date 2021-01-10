@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./components/App";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function Hi() {
-  return (
-    <>
-      <p>Yo!!!!!</p>
-    </>
-  );
-}
-
-render(<Hi />, document.querySelector("#myApp"));
+render(
+  <Router>
+    <App />
+  </Router>,
+  document.querySelector("#myApp")
+);
